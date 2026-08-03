@@ -30,6 +30,20 @@ namespace BrechoApi.Application.Services
         public async Task<Product?> GetByIdAsync(Guid id)
         {
             return await _productRepository.GetByIdAsync(id);
+
+        }
+        public async Task<Product?> UpdateAsync(Guid id, UpdateProductDto dto)
+        {
+            var product = new Product
+            {
+                Id = id,
+                Name = dto.Name,
+                Description = dto.Description,
+                Price = dto.Price,
+                Category = dto.Category
+            };
+            return await _productRepository.UpdateAsync(product);
         }
     }
+
 }

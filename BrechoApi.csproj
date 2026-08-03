@@ -23,12 +23,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Application\DTOs\" />
     <Folder Include="Application\Services\" />
     <Folder Include="Domain\Enums\" />
     <Folder Include="Infrastructure\Repositories\" />
     <Folder Include="Middleware\" />
-	<Folder Include="Controllers\" />
   </ItemGroup>
 
 </Project>

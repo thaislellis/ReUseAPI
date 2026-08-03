@@ -2,6 +2,7 @@
 using BrechoApi.Domain.Entities;
 using BrechoApi.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Update.Internal;
 
 namespace BrechoApi.Infrastructure.Repositories
 {
@@ -27,6 +28,25 @@ namespace BrechoApi.Infrastructure.Repositories
         public async Task<List<Product>> GetAllAsync()
         {
             return await _context.Products.ToListAsync();
+        }
+        public async Task<Product?> UpdateAsync(Product product)
+        {
+            var existingProduct = await _context.Products.FindAsync(product.Id);
+
+            if (existingProduct == null)
+            {
+                return null;
+            }
+
+            existingProduct.Name = product.Name;
+            existingProduct.Description = product.Description;
+            existingProduct.Price = product.Price;
+            existingProduct.Category = product.Category;
+
+            await _context.SaveChangesAsync();
+
+            return existingProduct;
+
         }
     }
 }
