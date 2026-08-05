@@ -7,9 +7,14 @@ namespace BrechoApi.Infrastructure.Data
     {
         public AppDbContext CreateDbContext(string[] args)
         {
+            var password = Environment.GetEnvironmentVariable("DB_PASSWORD");
+
+            var connectionString =
+                $"Host=localhost;Port=5433;Database=brecho_db;Username=postgres;Password={password}";
+
             var optionsBuilder = new DbContextOptionsBuilder<AppDbContext>();
 
-            optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=brecho_db;Username=postgres;Password=${DB_PASSWORD}");
+            optionsBuilder.UseNpgsql(connectionString);
 
             return new AppDbContext(optionsBuilder.Options);
         }
