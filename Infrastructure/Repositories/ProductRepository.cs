@@ -2,7 +2,6 @@
 using BrechoApi.Domain.Entities;
 using BrechoApi.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Update.Internal;
 
 namespace BrechoApi.Infrastructure.Repositories
 {
@@ -46,7 +45,22 @@ namespace BrechoApi.Infrastructure.Repositories
             await _context.SaveChangesAsync();
 
             return existingProduct;
-
         }
+         public async Task<bool> DeleteAsync(Guid id)
+        {
+            var existingProduct = await _context.Products.FindAsync(id);
+           
+            if (existingProduct == null)
+            {
+                return false;
+            }
+
+            _context.Products.Remove(existingProduct);
+            
+            await _context.SaveChangesAsync();
+            
+            return true;
+        }
+
     }
 }

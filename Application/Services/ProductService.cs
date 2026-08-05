@@ -44,6 +44,10 @@ namespace BrechoApi.Application.Services
             };
             return await _productRepository.UpdateAsync(product);
         }
+        public async Task<bool> DeleteAsync(Guid id)
+        {
+            return await _productRepository.DeleteAsync(id);
+        }
     }
 
 }

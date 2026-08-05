@@ -8,5 +8,6 @@ namespace BrechoApi.Application.Interfaces
         Task<Product?> GetByIdAsync(Guid id);
         Task<List<Product>> GetAllAsync();
         Task<Product?> UpdateAsync(Product product);
+        Task<bool> DeleteAsync(Guid id);
     }
 }
