@@ -1,4 +1,4 @@
-﻿namespace BrechoApi.Application.DTOs.Product
+﻿namespace ReUseApi.Application.DTOs.Product
 {
     public class CreateProductDto
     {

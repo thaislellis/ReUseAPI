@@ -1,6 +1,6 @@
-﻿using BrechoApi.Domain.Entities;
+﻿using ReUseApi.Domain.Entities;
 
-namespace BrechoApi.Application.Interfaces
+namespace ReUseApi.Application.Interfaces
 {
     public interface IProductRepository
     {

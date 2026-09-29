@@ -1,5 +1,5 @@
-﻿using BrechoApi.Domain.Enums;
-namespace BrechoApi.Domain.Entities
+﻿using ReUseApi.Domain.Enums;
+namespace ReUseApi.Domain.Entities
 {
     public class Order
     {

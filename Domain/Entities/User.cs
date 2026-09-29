@@ -1,4 +1,4 @@
-﻿namespace BrechoApi.Domain.Entities
+﻿namespace ReUseApi.Domain.Entities
 {
     public class User
     {

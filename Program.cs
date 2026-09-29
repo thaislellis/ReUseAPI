@@ -1,7 +1,7 @@
-using BrechoApi.Application.Interfaces;
-using BrechoApi.Application.Services;
-using BrechoApi.Infrastructure.Data;
-using BrechoApi.Infrastructure.Repositories;
+using ReUseApi.Application.Interfaces;
+using ReUseApi.Application.Services;
+using ReUseApi.Infrastructure.Data;
+using ReUseApi.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

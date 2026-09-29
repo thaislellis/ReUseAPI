@@ -1,9 +1,9 @@
-﻿using BrechoApi.Application.Interfaces;
-using BrechoApi.Domain.Entities;
-using BrechoApi.Infrastructure.Data;
+﻿using ReUseApi.Application.Interfaces;
+using ReUseApi.Domain.Entities;
+using ReUseApi.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 
-namespace BrechoApi.Infrastructure.Repositories
+namespace ReUseApi.Infrastructure.Repositories
 {
     public class ProductRepository : IProductRepository
     {

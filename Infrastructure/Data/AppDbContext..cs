@@ -1,8 +1,8 @@
 ﻿
 using Microsoft.EntityFrameworkCore;
-using BrechoApi.Domain.Entities;
+using ReUseApi.Domain.Entities;
 
-namespace BrechoApi.Infrastructure.Data
+namespace ReUseApi.Infrastructure.Data
 {
     public class AppDbContext : DbContext
     {

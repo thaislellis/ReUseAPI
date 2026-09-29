@@ -1,8 +1,8 @@
-﻿using BrechoApi.Application.DTOs.Product;
-using BrechoApi.Application.Services;
+﻿using ReUseApi.Application.DTOs.Product;
+using ReUseApi.Application.Services;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BrechoApi.Controllers
+namespace ReUseApi.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]

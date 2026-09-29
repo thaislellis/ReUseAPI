@@ -1,4 +1,4 @@
-﻿namespace BrechoApi.Domain.Enums
+﻿namespace ReUseApi.Domain.Enums
 {
     public enum OrderStatus
     {

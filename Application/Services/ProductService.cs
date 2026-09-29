@@ -1,8 +1,8 @@
-﻿using BrechoApi.Application.DTOs.Product;
-using BrechoApi.Application.Interfaces;
-using BrechoApi.Domain.Entities;
+﻿using ReUseApi.Application.DTOs.Product;
+using ReUseApi.Application.Interfaces;
+using ReUseApi.Domain.Entities;
 
-namespace BrechoApi.Application.Services
+namespace ReUseApi.Application.Services
 {
     public class ProductService
     {
